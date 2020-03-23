@@ -1,0 +1,69 @@
+body {
+	margin: 0;
+	    padding: 0;
+
+}
+
+header {
+
+}
+
+hr {
+	border: 5px solid rgb(8, 1, 1);
+	margin-top: 0;
+}
+
+.logo {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+h3, h6{
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.my-btn {
+	padding-right: 90px;
+	padding-left: 90px;
+	padding-top: 10px;
+	margin-bottom: 200px;
+	border-radius: 50px;
+}
+
+.my-btns {
+	padding-right: 90px;
+	padding-left: 90px;
+	padding-top: 10px;
+	border-radius: 50px;
+	margin: 20px;
+
+}
+
+/*.my-link {
+	margin: 10px;
+}*/
+
+
+/*the radio buttons on the index file all are hidden at the start*/
+.my-radio{
+	display: none;
+}
+
+.end1 {
+	display: none;
+}
+
+.back1 {
+	display: none;
+}
+.next2 {
+	display: none;
+}
+
+
+/*styling the radio buttons*/
+.my-styled-radio {
+	border:1px solid blue;
+}
