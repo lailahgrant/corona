@@ -49,24 +49,24 @@ $('body').on('click','.do-test-again', function() {
 	window.location.reload(true);
 });
 
-
-// logic for the radio buttons - if no radio button is selected, next button stays disabled & if a radio button is selected, next button is enabled.
-$(function () {
-	$('.not-me').on('click','.next2',function() {
-		if($(this).val() == "Enabled:checked"){
-			$('#nextBtn').prop('disabled', false);
-		}else {
-			$('#nextBtn').prop('disabled', true);
-		}
+// styled the radio buttons on click, but they are all selected
+$(document).ready(function(){
+	$('.button-controls').click(function(){
+		$('.button-controls').css("background-color"," #2196F3");
+		$('.my-styled-radio').css( "border","1px solid #002d5a");
+		$('#next2').removeAttr('disabled');
 	});
 });
 
-$(function () {
-	$('.not-me').click(function () {
-		if($(this).val() == "Enabled:checked"){
-			$('.next1').prop('disabled', true);
-		}else {
-			$('.next1').prop('disabled', false);
-		}
+
+// styled the checkbox buttons on click, but they are all selected
+$(document).ready(function(){
+	$('.button-controls-checkbox').click(function(){
+		$('.button-controls-checkbox').css("background-color"," #2196F3");
+		$('.my-styled-radio').css( "border","1px solid #002d5a");
+		$('#next2').removeAttr('disabled');
 	});
 });
+
+
+
