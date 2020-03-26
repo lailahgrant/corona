@@ -4,9 +4,15 @@ body {
 
 }
 
-header {
-
+h1 {
+	font-family: 'Fredoka One', cursive;
 }
+
+p {
+	font-family: 'Indie Flower', cursive;
+	font-size: 24px;
+}
+
 
 hr {
 	border: 5px solid rgb(8, 1, 1);
@@ -64,6 +70,224 @@ h3, h6{
 
 
 /*styling the radio buttons*/
+
 .my-styled-radio {
-	border:1px solid blue;
+    border: 1px solid rgb( 229, 232, 232);
+    background-color: #FFF;
+    padding-bottom:  10px;
+	margin-bottom: 5px;
+	border-radius: 7px;
+}
+
+/*label {
+  cursor: pointer;
+  padding-right: 25px;
+}
+input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.not-me, label {
+	cursor: pointer;
+	display: inline-block;
+}
+
+
+.not-me {
+	opacity: 0;
+	position: absolute;
+}
+
+.not-me:hover
+{
+     background-color: #f7f7f7;
+     color: blue;
+     box-shadow:0 0 5px 0px rgb(133, 193, 233) inset;
+	
+}
+
+input {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 11px 23px;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0;
+    outline: 0;
+    background-color: transparent;
+}
+
+
+.buttons-control {
+	position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    vertical-align: middle;
+    background-color: inherit;
+    color: #017b5f;
+    border: 2px solid #666;
+    border-radius: 24px;
+}
+
+.not-me:checked+.buttons-control:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 10px;
+	height: 10px;
+	background-color: #01a982;
+    border-radius: 12px;
+}
+
+
+.not-me:checked+.buttons-control {
+    border-color: #01a982;
+}
+
+.buttons-control {
+  transform: scale(0.75);
+}*/
+
+
+
+.my-styled-radio:hover {
+
+}
+
+
+.not-me
+{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: #f1f1f1;
+     color: #666;
+     top: 10px;
+     height: 20px;
+     width: 20px;
+     border: 0;
+     border-radius: 50px;
+     cursor: pointer;     
+     margin-right: 7px;
+     outline: none;
+     margin-left: 1.25px;
+     box-shadow:0 0 5px 0px  inset;
+
+}
+
+
+/*.not-me:checked::after
+{
+     position: absolute;
+	     font: 13px/1 'Open Sans', sans-serif;
+	     left: 11px;
+	     top: 7px;
+	     content: '\02143';
+	     transform: rotate(40deg);
+}*/
+
+.not-me:hover
+{
+     background-color: #f7f7f7;
+     color: blue;
+     box-shadow:0 0 5px 0px rgb(133, 193, 233) inset;
+	
+}
+.not-me:checked+
+{
+     background-color: #f1f1f1;
+     color: blue;
+}
+label
+{
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     cursor: pointer;
+} 
+
+
+/*styling the radio buttons*/
+.my-styled-radio {
+	border: 1px solid rgb( 229, 232, 232);
+    background-color: #FFF;
+    padding-top:  12px;
+	margin-bottom: 5px;
+	border-radius: 7px;
+	height: 50px;
+}
+
+.my-label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.my-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.button-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.my-label:hover input ~ .button-controls {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.my-label input:checked ~ .button-controls {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.button-controls:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.my-label input:checked ~ .button-controls:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.my-label .button-controls:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+
+
+/* create a custom radio button */
+.button-controls-checkbox{
+
 }

@@ -48,3 +48,25 @@ $('body').on('click','.do-test-again', function() {
 	$('.next1').show();
 	window.location.reload(true);
 });
+
+
+// logic for the radio buttons - if no radio button is selected, next button stays disabled & if a radio button is selected, next button is enabled.
+$(function () {
+	$('.not-me').on('click','.next2',function() {
+		if($(this).val() == "Enabled:checked"){
+			$('#nextBtn').prop('disabled', false);
+		}else {
+			$('#nextBtn').prop('disabled', true);
+		}
+	});
+});
+
+$(function () {
+	$('.not-me').click(function () {
+		if($(this).val() == "Enabled:checked"){
+			$('.next1').prop('disabled', true);
+		}else {
+			$('.next1').prop('disabled', false);
+		}
+	});
+});
