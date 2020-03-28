@@ -50,20 +50,20 @@ $('body').on('click','.do-test-again', function() {
 });
 
 // styled the radio buttons on click, but they are all selected
-$(document).ready(function(){
-	$('.button-controls').click(function(){
-		$(this).css("background-color"," #2196F3"); //works on the selected radio button when clicked
-		$(this).closest('.my-styled-radio').css( "border","1px solid #002d5a");//only styles the border of only the selcted radio btn when the radio btn is selected
-		$('#next2').removeAttr('disabled');
-	});
-});
+ $(document).ready(function(){
+ 	$('.button-controls').click(function(){
+// 		$(this).css("background-color"," #2196F3"); //works on the selected radio button when clicked
+// 		$(this).closest('.my-styled-radio').css( "border","1px solid #002d5a");//only styles the border of only the selcted radio btn when the radio btn is selected
+ 		$('#next2').removeAttr('disabled');
+ 	});
+ });
 
 
 // styled the checkbox buttons on click, but they are all selected
 $(document).ready(function(){
 	$('.button-controls-checkbox').click(function(){
-		$(this).css("background-color"," #2196F3");
-		$(this).closest('.my-styled-radio').css( "border","1px solid #002d5a");
+	//	$(this).css("background-color"," #2196F3");
+	//	$(this).closest('.my-styled-radio').css( "border","1px solid #002d5a");
 		$('#next2').removeAttr('disabled');
 	});
 });
