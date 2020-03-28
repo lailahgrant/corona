@@ -219,7 +219,8 @@ label
     padding-top:  12px;
 	margin-bottom: 5px;
 	border-radius: 7px;
-	height: 50px;
+  height: 50px;
+  border:1px solid #002d5a
 }
 
 .my-label {
@@ -261,6 +262,7 @@ label
 /* When the radio button is checked, add a blue background */
 .my-label input:checked ~ .button-controls {
   background-color: #2196F3;
+ 
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
